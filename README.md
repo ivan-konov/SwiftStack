@@ -7,6 +7,7 @@ Feedback is welcome and greatly appreciated!
 ##Usage
 
 ```swift
+// create an empty stack of strings
 var stack = Stack<String>()
 
 // add an element
