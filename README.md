@@ -7,7 +7,7 @@ Feedback is welcome and greatly appreciated!
 ##Usage
 
 ```swift
-var stack = Stack()
+var stack = Stack<String>()
 
 // add an element
 stack.push("element")
@@ -21,10 +21,14 @@ let poppedElement = stack.pop()
 // remove all elements
 stack.clear()
 
-// query the stack
+// check if stacks is empty
+stack.isEmpty
 
-let emptyTest = stack.isEmpty
-let stackCount = stack.count
+// get count of the elements contained in the stack
+stack.count
+
+// check if an element is contained in the stack
+stack.containsElement("element")
 
 ```
 

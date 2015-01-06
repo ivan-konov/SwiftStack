@@ -22,9 +22,11 @@
 //SOFTWARE.
 
 
-struct Stack {
-    var storage = [Any]()
+
+struct Stack<T: Equatable> {
+    typealias ElementType = T
     
+    var storage = [ElementType]()
     
     // MARK: Quering the Stack
     var count: Int {
@@ -39,7 +41,7 @@ struct Stack {
         }
     }
     
-    func peek() -> Any? {
+    func peek() -> ElementType? {
         if storage.count > 0 {
             let lastElementIndex = storage.count - 1
             
@@ -49,15 +51,17 @@ struct Stack {
         return nil
     }
     
-    // MARK: Adding and Removing Elements
-    
-    mutating func push(value: Any) {
-        storage.append(value)
+    func containsElement(element: ElementType) -> Bool {
+        return contains(storage, element)
     }
     
-    mutating func pop() -> Any? {
-        storage.description
-        
+    // MARK: Adding and Removing Elements
+    
+    mutating func push(element: ElementType) {
+        storage.append(element)
+    }
+    
+    mutating func pop() -> ElementType? {
         if storage.count > 0 {
             return storage.removeLast()
         }
@@ -69,6 +73,7 @@ struct Stack {
         storage.removeAll()
     }
 }
+
     // MARK: Debug
 extension Stack: Printable {
     var description: String {
