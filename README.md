@@ -1,6 +1,7 @@
 #SwiftStack
 
-SwiftStack implementation for Swift using an array as underlying storage. The stack is dynamic and does not have over/underflow situations.
+SwiftStack is a Stack implementation for Swift.
+It uses an array as underlying storage. The stack is dynamic and does not have over/underflow states.
 
 Feedback is welcome and greatly appreciated!
 
@@ -23,13 +24,16 @@ let poppedElement = stack.pop()
 stack.clear()
 
 // check if stacks is empty
-stack.isEmpty
+let empty = stack.isEmpty
 
 // get count of the elements contained in the stack
-stack.count
+let stackCount = stack.count
 
 // check if an element is contained in the stack
-stack.containsElement("element")
+let elementContaied = stack.containsElement("element")
+
+// get the first index of an element if contained in the stack
+let indexOfElement = stack.indexOfElement("element")
 
 ```
 

@@ -53,6 +53,11 @@ struct Stack<T: Equatable> {
     
     func containsElement(element: ElementType) -> Bool {
         return contains(storage, element)
+    
+    }
+    
+    func indexOfElement(element: ElementType) -> Int? {
+        return find(storage, element)
     }
     
     // MARK: Adding and Removing Elements
