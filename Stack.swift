@@ -30,15 +30,11 @@ struct Stack<T: Equatable> {
     
     // MARK: Quering the Stack
     var count: Int {
-        get {
-            return storage.count
-        }
+        return storage.count
     }
     
     var isEmpty: Bool {
-        get {
-            return storage.isEmpty
-        }
+        return storage.isEmpty
     }
     
     func peek() -> ElementType? {
