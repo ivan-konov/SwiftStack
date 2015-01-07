@@ -26,7 +26,7 @@
 struct Stack<T: Equatable> {
     typealias ElementType = T
     
-    var storage = [ElementType]()
+    private var storage = [ElementType]()
     
     // MARK: Quering the Stack
     var count: Int {
