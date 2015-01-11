@@ -9,7 +9,7 @@ Feedback is welcome and greatly appreciated!
 
 ```swift
 // create an empty stack of strings
-var stack = Stack<String>()
+var stack = SwiftStack<String>()
 
 // add an element
 stack.push("element")
@@ -30,7 +30,8 @@ let empty = stack.isEmpty
 let stackCount = stack.count
 
 // check if an element is contained in the stack
-let elementContaied = stack.containsElement("element")
+let elementCs
+ontaied = stack.containsElement("element")
 
 // get the first index of an element if contained in the stack
 let indexOfElement = stack.indexOfElement("element")
