@@ -23,7 +23,7 @@
 
 
 
-struct Stack<T: Equatable> {
+struct SwiftStack<T: Equatable> {
     typealias ElementType = T
     
     private var storage = [ElementType]()
@@ -76,7 +76,7 @@ struct Stack<T: Equatable> {
 }
 
     // MARK: Debug
-extension Stack: Printable {
+extension SwiftStack: Printable {
     var description: String {
         return storage.description
     }
