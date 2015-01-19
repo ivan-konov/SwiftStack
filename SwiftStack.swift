@@ -38,13 +38,7 @@ struct SwiftStack<T: Equatable> {
     }
     
     func peek() -> ElementType? {
-        if storage.count > 0 {
-            let lastElementIndex = storage.count - 1
-            
-            return storage[lastElementIndex]
-        }
-        
-        return nil
+        return storage.last
     }
     
     func containsElement(element: ElementType) -> Bool {
