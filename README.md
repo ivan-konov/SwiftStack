@@ -29,11 +29,8 @@ let empty = stack.isEmpty
 // get count of the elements contained in the stack
 let stackCount = stack.count
 
-// check if an element is contained in the stack
-let elementsContaied = stack.containsElement("element")
-
-// get the first index of an element if contained in the stack
-let indexOfElement = stack.indexOfElement("element")
+// check if an element is contained in the stack and get it's index in the stack if present
+let indexOfElement = stack.findElement("element")
 
 ```
 

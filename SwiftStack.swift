@@ -40,13 +40,8 @@ struct SwiftStack<T: Equatable> {
     func peek() -> ElementType? {
         return storage.last
     }
-    
-    func containsElement(element: ElementType) -> Bool {
-        return contains(storage, element)
-    
-    }
-    
-    func indexOfElement(element: ElementType) -> Int? {
+        
+    func findElement(element: ElementType) -> Int? {
         return find(storage, element)
     }
     
